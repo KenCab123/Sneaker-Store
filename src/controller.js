@@ -54,9 +54,28 @@ const destroy = (sneakers, sneakerId) => {
     }
 }
 
+const edit = (sneakers, sneakerId, updatedSneaker) => {
+    const index = sneakers.findIndex(s => s.id === sneakerId);
+
+    if (index > -1 && sneakerStock[updatedSneaker]) {
+        sneakers[index].id = sneakerId;
+        sneakers[index].name = updatedSneaker;
+        sneakers[index].rarity = sneakerStock[updatedSneaker].rarity;
+        sneakers[index].price = sneakerStock[updatedSneaker].price;
+        inform(`Sneaker was successfully updated`);
+    } else if (index === -1) {
+        inform(`Sneaker not found. No action taken`);
+    } else {
+        inform(`Sneaker '${updatedSneaker}' does not exist in the stock. No action taken`);
+    }
+
+    return sneakers;
+}
+
 module.exports = {
     create,
     index,
     show,
-    destroy
+    destroy,
+    edit
 }
