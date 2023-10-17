@@ -35,6 +35,12 @@ Welcome to our Sneaker Store Application! This application enables you to manage
 4. **Run the Application:**
 
 ```npm run {whatever command you type}```
+[ npm run create "Air Max 90", 
+  npm run index, 
+  npm run show "pPhUU", 
+  npm run destroy "pPhUU", 
+  npm run update "pPhUU" "Jordan 1", 
+  npm run total ]
 
 ## Controller Functions
 
