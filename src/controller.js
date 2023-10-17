@@ -29,6 +29,10 @@ const create = (sneakers, sneakerName) => {
     return sneakers;
 }
 
+const index = (sneakers) => sneakers.map(s => s.id + ' | ' + s.name + ' | inStock: ' + s.inStock + ' | rarity: ' + s.rarity + ' | price: ' + s.price)
+
+
 module.exports = {
-    create
+    create,
+    index
 }
