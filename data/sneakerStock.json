@@ -1,0 +1,12 @@
+{
+    "Air Max 90": {"rarity": 90, "price": 120.00},
+    "Yeezy Boost 350": {"rarity": 95, "price": 220.00},
+    "Ultra Boost": {"rarity": 85, "price": 180.00},
+    "Jordan 1": {"rarity": 92, "price": 150.00},
+    "VaporMax": {"rarity": 88, "price": 200.00},
+    "Chuck Taylor All Star": {"rarity": 80, "price": 55.00},
+    "Air Force 1": {"rarity": 89, "price": 100.00},
+    "NMD R1": {"rarity": 87, "price": 130.00},
+    "Classic Leather": {"rarity": 82, "price": 75.00},
+    "Old Skool": {"rarity": 84, "price": 65.00}
+}
