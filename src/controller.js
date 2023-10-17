@@ -31,8 +31,18 @@ const create = (sneakers, sneakerName) => {
 
 const index = (sneakers) => sneakers.map(s => s.id + ' | ' + s.name + ' | inStock: ' + s.inStock + ' | rarity: ' + s.rarity + ' | price: ' + s.price)
 
+const show = (sneakers, sneakerId) => {
+    const sneaker = sneakers.find(s => s.id === sneakerId);
+
+    if(sneaker) {
+        return sneaker.id + ' | ' + sneaker.name + ' | inStock: ' + sneaker.inStock + ' | rarity: ' + sneaker.rarity + ' | price: ' + sneaker.price
+    } else {
+        return `Sneaker not found`
+    }
+}
 
 module.exports = {
     create,
-    index
+    index,
+    show
 }
