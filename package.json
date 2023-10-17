@@ -1,0 +1,20 @@
+{
+  "name": "sneaker-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create": "node index.js create",
+    "index": "node index.js index",
+    "show": "node index.js show",
+    "destroy": "node index.js destroy",
+    "update": "node index.js update"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nanoid": "^3.3.6"
+  }
+}
