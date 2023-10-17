@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": "GKZqT",
+    "name": "Jordan 1",
+    "inStock": false,
+    "rarity": 92,
+    "price": 150
+  },
+  {
+    "id": "iQhHH",
+    "name": "Air Max 90",
+    "inStock": true,
+    "rarity": 90,
+    "price": 120
+  }
+]

@@ -9,7 +9,8 @@
     "index": "node index.js index",
     "show": "node index.js show",
     "destroy": "node index.js destroy",
-    "update": "node index.js update"
+    "update": "node index.js update",
+    "total": "node index.js total"
   },
   "keywords": [],
   "author": "Kenneth Cabral",

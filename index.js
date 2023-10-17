@@ -1,5 +1,5 @@
 const { readJSONFile, writeJSONFile} = require('./src/helpers');
-const { create, index, show, destroy, edit} = require('./src/controller');
+const { create, index, show, destroy, edit, total} = require('./src/controller');
 
 const inform = console.log
 
@@ -32,6 +32,10 @@ const run = () => {
         case 'update':
             updatedSneaker = edit(sneakers, sneaker, process.argv[4]);
             writeToFile = true;
+            break;
+        case 'total':
+            const price = total(sneakers);
+            inform(price);
             break;
         default:
             inform(`There was an error.`);
