@@ -72,10 +72,13 @@ const edit = (sneakers, sneakerId, updatedSneaker) => {
     return sneakers;
 }
 
+const total = sneakers => sneakers.reduce((acc, curr) => acc + curr.price, 0);
+
 module.exports = {
     create,
     index,
     show,
     destroy,
-    edit
+    edit,
+    total
 }
