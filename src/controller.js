@@ -41,8 +41,22 @@ const show = (sneakers, sneakerId) => {
     }
 }
 
+const destroy = (sneakers, sneakerId) => {
+    const index = sneakers.findIndex(s => s.id === sneakerId);
+
+    if(index > -1) {
+        sneakers.splice(index, 1);
+        inform(`Sneaker successfully removed from cart`);
+        return sneakers;
+    } else {
+        inform(`Sneaker not found. No action taken`);
+        return sneakers
+    }
+}
+
 module.exports = {
     create,
     index,
-    show
+    show,
+    destroy
 }
